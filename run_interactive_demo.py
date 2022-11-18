@@ -25,6 +25,9 @@ if __name__ == '__main__':
         fpath_without_ext = os.path.splitext(str(speaker_reference))[0]
         speaker_name = os.path.normpath(fpath_without_ext).split(os.sep)[-1]
         filename = f"out_audios/{speaker_name}_syn.wav"
+        from pathlib import Path
+        if not Path.exists(Path("out_audios")):
+            os.mkdir("out_audios")
 
         if speaker_reference != "":
             if os.path.exists(speaker_reference):
