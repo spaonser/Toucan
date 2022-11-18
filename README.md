@@ -1,5 +1,3 @@
-![image](Utility/toucan.png)
-
 IMS Toucan is a toolkit for teaching, training and using state-of-the-art Speech Synthesis models, developed at the
 **Institute for Natural Language Processing (IMS), University of Stuttgart, Germany**. Everything is pure Python and
 PyTorch based to keep it as simple and beginner-friendly, yet powerful as possible.
@@ -95,7 +93,7 @@ conda create --prefix ./toucan_conda_venv --no-default-packages python=3.8
 
 pip install --no-cache-dir -r requirements.txt
 
-pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/torch_stable.html
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 ```
 
 #### espeak-ng
